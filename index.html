@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fénix Cozy · Dirección creativa</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F8E7E6;--bg2:#F1D3D4;--ink:#4A3236;--mute:#7E5F65;--rose:#E3A9B1;--mauve:#9C6B77;--gold:#C9A27A;--card:#FFF6F3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2B1D20;--bg2:#3A262A;--ink:#F6E3E1;--mute:#C9A9AE;--rose:#C98A95;--mauve:#E0B3BC;--gold:#D9B58E;--card:#36242A}}
+:root[data-theme="dark"]{--bg:#2B1D20;--bg2:#3A262A;--ink:#F6E3E1;--mute:#C9A9AE;--rose:#C98A95;--mauve:#E0B3BC;--gold:#D9B58E;--card:#36242A}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 17px/1.65 Jost,system-ui,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;line-height:1.05;margin:0}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:radial-gradient(120% 90% at 20% 10%,var(--bg2),var(--bg))}
+.glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(380px circle at var(--x,70%) var(--y,30%),rgba(255,214,214,.55),transparent 70%);mix-blend-mode:soft-light}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+.hero h1{font-size:clamp(46px,9vw,104px);font-style:italic;letter-spacing:-.01em}
+.hero p{max-width:34ch;color:var(--mute);margin:20px 0 0}
+.neck{width:100%;max-width:300px;justify-self:center}
+.neck .chain{stroke:var(--gold);stroke-width:1.6;fill:none;stroke-dasharray:420;stroke-dashoffset:420;animation:draw 3.2s ease-out .3s forwards}
+.neck .gem{fill:var(--rose);stroke:var(--gold);stroke-width:1.5;opacity:0;animation:pop .8s ease-out 3s forwards}
+.neck .spark{fill:#fff;opacity:0;animation:tw 3.4s ease-in-out 3.6s infinite;transform-origin:center;transform-box:fill-box}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{to{opacity:1}}
+@keyframes tw{0%,100%{opacity:0;transform:scale(.4)}50%{opacity:1;transform:scale(1)}}
+section{padding:84px 0}
+h2{font-size:clamp(32px,5vw,52px);margin-bottom:18px}
+.lead{max-width:60ch;color:var(--mute)}
+.pal{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px;margin-top:28px}
+.sw{border-radius:18px;padding:70px 14px 12px;font-size:14px;line-height:1.35;color:#3b282c}
+.sw b{display:block;font-weight:500}
+.frames{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin-top:32px}
+.frame{aspect-ratio:4/5;border-radius:26px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:22px;transition:transform .5s ease}
+.frame:hover{transform:translateY(-6px) rotate(-.6deg)}
+.frame .t{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:30px;line-height:1.05;color:#fff;text-shadow:0 1px 18px rgba(74,50,54,.45);position:relative}
+.frame small{display:block;font:400 13px/1.4 Jost,sans-serif;margin-top:8px;opacity:.9}
+.f1{background:radial-gradient(circle at 70% 25%,#f7d9d6 0 12%,transparent 13%),linear-gradient(160deg,#c98a95,#8f5c68)}
+.f2{background:radial-gradient(circle at 35% 35%,#fff3ee 0 9%,transparent 10%),radial-gradient(circle at 62% 35%,#fff3ee 0 9%,transparent 10%),linear-gradient(170deg,#e9b9b7,#b27983)}
+.f3{background:radial-gradient(ellipse at 50% 30%,#f9e6dc 0 30%,transparent 31%),linear-gradient(180deg,#d9a0a6,#7e5260)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px;margin-top:28px}
+.cols h3{font-size:28px;margin-bottom:8px;font-style:italic}
+ul{padding-left:18px;margin:0}li{margin:6px 0}
+.band{background:var(--bg2)}
+.quote{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:clamp(26px,4vw,40px);line-height:1.2;max-width:24ch}
+footer{padding:50px 0 70px;color:var(--mute);font-size:14px}
+@media(max-width:700px){.hero .wrap{grid-template-columns:1fr}.neck{max-width:220px}}
+@media(prefers-reduced-motion:reduce){.neck .chain{animation:none;stroke-dashoffset:0}.neck .gem{animation:none;opacity:1}.neck .spark{animation:none;opacity:1}.frame{transition:none}}
+</style>
+</head>
+<body>
+<header class="hero" id="hero">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div>
+      <h1>Brillo de casa</h1>
+      <p>Campaña cozy de Joyería Fénix: collares y broqueles que se sienten como un suéter suave en un día frío.</p>
+    </div>
+    <svg class="neck" viewBox="0 0 300 340" role="img" aria-label="Collar con dije rosa">
+      <path class="chain" d="M30 20 C40 190 260 190 270 20"/>
+      <path class="gem" d="M150 196 l22 24 -22 44 -22 -44z"/>
+      <path class="spark" d="M205 128 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5z"/>
+      <path class="spark" style="animation-delay:4.4s" d="M96 150 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4z"/>
+    </svg>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>La idea</h2>
+    <p class="lead">Fénix ya es elegante y minimalista. Lo cozy suma calor: luz de ventana, punto de lana, vapor de una taza. La joya es lo único que brilla en una escena tranquila. Nada de lujo frío ni de vitrina; es la pieza que te pones para quedarte en casa y sentirte bien.</p>
+    <p class="quote" style="margin-top:36px">Pequeña, suave y tuya.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Paleta</h2>
+    <p class="lead">Rosas empolvados con un toque de oro champán. Cálidos, sin caer en dulce.</p>
+    <div class="pal">
+      <div class="sw" style="background:#F8E7E6"><b>Rosa lana</b>#F8E7E6</div>
+      <div class="sw" style="background:#E3A9B1"><b>Rosa cuarzo</b>#E3A9B1</div>
+      <div class="sw" style="background:#9C6B77;color:#fff"><b>Malva ceniza</b>#9C6B77</div>
+      <div class="sw" style="background:#C9A27A"><b>Oro champán</b>#C9A27A</div>
+      <div class="sw" style="background:#4A3236;color:#fff"><b>Cacao suave</b>#4A3236</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Tipografía</h2>
+    <div class="cols">
+      <div><h3>Cormorant Garamond</h3><p>Para frases en cursiva sobre las fotos. Es romántica y cálida, con presencia sin gritar.</p></div>
+      <div><h3>Jost Light</h3><p>Para datos y llamadas a la acción. Limpia y minimalista, que no compita con la joya.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Escenas de la sesión</h2>
+    <p class="lead">Fotografía realista, luz natural y de tendencia, que no parezca generada. Todas las imágenes llevan texto y ninguna lleva precio.</p>
+    <div class="frames">
+      <div class="frame f1"><div class="t">Tu collar favorito<small>Dije rosa sobre suéter de punto crudo, luz lateral.</small></div></div>
+      <div class="frame f2"><div class="t">Broqueles para mañanas lentas<small>Primer plano de oreja, taza con vapor desenfocada.</small></div></div>
+      <div class="frame f3"><div class="t">Hecho para quedarte<small>Manos con manta, cadena fina sobre la muñeca.</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Cómo se ve y cómo suena</h2>
+    <div class="cols">
+      <div>
+        <h3>Sí</h3>
+        <ul>
+          <li>Luz de ventana, tonos rosas, texturas de lana y algodón.</li>
+          <li>Un solo accesorio protagonista por imagen: collar o broqueles.</li>
+          <li>Mucho aire en la composición, el texto en cursiva con espacio.</li>
+          <li>Frases cortas, cálidas y en primera persona.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>No</h3>
+        <ul>
+          <li>Precios en los posts.</li>
+          <li>Fondos blancos de catálogo o brillos exagerados.</li>
+          <li>Looks de IA: manos raras, piel de plástico, simetría perfecta.</li>
+          <li>Más de dos elementos de texto por imagen.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Frases para publicaciones e historias</h2>
+    <div class="cols">
+      <p class="quote" style="font-size:28px">Hoy toca quedarse en casa, pero con brillo.</p>
+      <p class="quote" style="font-size:28px">Un detalle pequeño que abriga.</p>
+      <p class="quote" style="font-size:28px">Café, manta y tus broqueles favoritos.</p>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">Joyería Fénix · Dirección creativa cozy · Facebook e Instagram</div></footer>
+
+<script>
+(function(){
+  var h=document.getElementById('hero');
+  if(!h||matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  h.addEventListener('pointermove',function(e){
+    var r=h.getBoundingClientRect();
+    h.style.setProperty('--x',(e.clientX-r.left)+'px');
+    h.style.setProperty('--y',(e.clientY-r.top)+'px');
+  });
+})();
+</script>
+</body>
+</html>
